@@ -13,7 +13,7 @@ pipeline {
                     $class: 'GitSCM',
                     branches: [[name: '*/main']],
                     extensions: [[$class: 'CleanBeforeCheckout']],
-                    userRemoteConfigs: [[url: 'https://github.com/Bodiok007/TerraformAppForJenkins.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/Bodiok007/AppForJenkins.git']]
                 ])
             }
         }
