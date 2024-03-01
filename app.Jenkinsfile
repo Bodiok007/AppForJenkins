@@ -11,7 +11,7 @@ pipeline {
             steps {
                 checkout([
                     $class: 'GitSCM',
-                    branches: [[name: '*/master']],
+                    branches: [[name: '*/main']],
                     extensions: [[$class: 'CleanBeforeCheckout']],
                     userRemoteConfigs: [[url: 'https://github.com/Bodiok007/TerraformAppForJenkins.git']]
                 ])
