@@ -36,6 +36,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
+                    npm install
                     npm test
                 '''
             }
